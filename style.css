@@ -37,6 +37,12 @@ em {
   color: white;
   border-radius: 50px;
   padding: 20px 30px;
+  display: inline-block;
+  margin-top: 70px;
+}
+.voir-portfolio {
+  display: flex;
+  justify-content: center;
 }
 .container {
   border-right: 1px solid #8e86b5;
@@ -86,7 +92,7 @@ section {
   align-items: flex-start;
 }
 footer,
-.header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,11 +143,41 @@ footer,
 .portraits {
   display: grid;
   gap: 15px;
-  grid-template: repeat(2, 300px) / repeat(3, 1fr);
+  grid-template: repeat(2, 400px) / repeat(3, 1fr);
   margin-bottom: 80px;
 }
 .portfolio-photos img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+.lien-conteneur-photo {
+  position: relative;
+  overflow: hidden;
+}
+.photo-hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9f8ff;
+}
+.lien-conteneur-photo:hover .photo-hover {
+  z-index: 2;
+}
+td,
+th {
+  border: 1px solid #8788ba;
+  color: white;
+  padding: 50px;
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
 }
