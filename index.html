@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil – Robbie Lens Photographie</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,8 +50,26 @@
         </div>
         <a href="" class="cta">VOIR MON PORTFOLIO</a>
       </section>
-      <section class="votre-projet">
-        <h2>Parlons de votre projet</h2>
+
+      <section>
+        <form action="">
+          <h2>Parlons de votre projet</h2>
+          <div class="name-email">
+            <div>
+              <label for="name">nom</label>
+              <input type="text" id="name" name="nom" required />
+            </div>
+            <div>
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div>
+            <label for="message">message</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <input id="submit" type="submit" name="enver" value="ENVOYER" />
+        </form>
       </section>
     </main>
     <footer>
