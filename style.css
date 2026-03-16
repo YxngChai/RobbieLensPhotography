@@ -101,6 +101,7 @@ nav {
   background-color: white;
   padding: 20px 50px 20px 50px;
 }
+
 .links,
 .social-medias {
   display: flex;
@@ -140,11 +141,12 @@ nav {
   gap: 15px;
   grid-template: repeat(3, 300px) / repeat(3, 1fr);
   margin-bottom: 80px;
+  border: 1px solid pink;
 }
 .portraits {
   display: grid;
   gap: 15px;
-  grid-template: repeat(2, 400px) / repeat(3, 1fr);
+  grid-template: repeat(2, 500px) / repeat(3, 1fr);
   margin-bottom: 80px;
 }
 .portfolio-photos img {
@@ -256,7 +258,7 @@ form {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  height: 600px;
+  height: 700px;
   margin: auto;
 }
 form h2 {
@@ -273,9 +275,16 @@ form label {
   max-width: 525px;
   display: flex;
   gap: 20px;
+  border-radius: 15px;
 }
 .name-email > * {
   flex-grow: 1;
+}
+.name-email input:focus,
+textarea:focus {
+  border: 3px solid #8788ba;
+  outline: none;
+  border-radius: 15px;
 }
 input {
   width: 100%;
@@ -308,9 +317,27 @@ textarea {
   form {
     width: 80%;
   }
+  section {
+    padding: 20px;
+  }
+  .a-propos-main {
+    width: 90%;
+    padding-top: 40px;
+  }
 }
 @media screen and (max-width: 700px) {
   .name-email {
     flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .links {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  #submit {
+    padding: 10px;
   }
 }
