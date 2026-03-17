@@ -337,6 +337,18 @@ textarea {
     gap: 20px;
     margin-top: 20px;
   }
+  .links a {
+    position: relative;
+  }
+  .links a::after {
+    content: "";
+    height: 0.1em;
+    width: 100%;
+    background-color: rgb(194, 193, 193);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
   #submit {
     padding: 10px;
   }
